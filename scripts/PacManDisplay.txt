@@ -1,0 +1,1 @@
+Display "{x}" "{y}" 30 30 "{image}"

@@ -1,0 +1,15 @@
+Display "images/examples/grid2.png"
+Begin MoveTo "images/examples/C8.png"
+Call "MoveToImage={StepParameter2}" "scripts/examples/MoveTest.txt"
+End
+Begin MoveTo "images/examples/A15.png"
+Set "MyParam" "images/examples/A15.png"
+Call "MoveToImage={MyParam}" "scripts/examples/MoveTest.txt"
+End
+Begin MoveTo "images/examples/D15.png"
+Call "Dummy Parameter = Dummy value & MoveToImage = {StepParameter2}" "scripts/examples/MoveTest.txt"
+End
+MouseLeftClick
+Set "ParameterToModify" "10"
+Call scripts/examples/ModifyParameterTest.txt PassedParameter=30
+Verify "{ParameterToModify}=10"

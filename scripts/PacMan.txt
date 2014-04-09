@@ -1,0 +1,37 @@
+Begin "Settings"
+AnimateCursor Yes
+WaitStableScreen No
+Doctor No
+End
+Begin "Show " "images/examples/pacboard_small.png"
+Display "images/examples/pacboard.png"
+End
+Begin Display 240 35 "images/examples/Blinky.png"
+Call "x={StepParameter2}" "y={StepParameter3}" "image={StepParameter4}" scripts/examples/PacManDisplay.txt
+End
+Begin Display 270 35 "images/examples/Inky.png"
+Call "x={StepParameter2}" "y={StepParameter3}" "image={StepParameter4}" scripts/examples/PacManDisplay.txt
+End
+Begin Display 300 35 "images/examples/Pinky.png"
+Call "x={StepParameter2}" "y={StepParameter3}" "image={StepParameter4}" scripts/examples/PacManDisplay.txt
+End
+Begin Display 330 35 "images/examples/Clyde.png"
+Call "x={StepParameter2}" "y={StepParameter3}" "image={StepParameter4}" scripts/examples/PacManDisplay.txt
+End
+Begin Display 180 118 "images/examples/Pacman.png"
+Call "x={StepParameter2}" "y={StepParameter3}" "image={StepParameter4}" scripts/examples/PacManDisplay.txt
+End
+Begin "Animate " "images/examples/Blinky.png" "images/examples/Inky.png" "images/examples/Pinky.png" "images/examples/Clyde.png"
+Repeat "20"
+DragStartRandom "images/examples/Blinky.png" "images/examples/Inky.png" "images/examples/Pinky.png" "images/examples/Clyde.png"
+DragDrop "images/examples/1355258769815.png"
+EndRepeat
+End
+Begin "Hide " "images/examples/pacboard_small.png" "images/examples/Pacman.png" "images/examples/Blinky.png" "images/examples/Inky.png" "images/examples/Pinky.png" "images/examples/Clyde.png"
+Click "images/examples/Blinky.png"
+Click "images/examples/Inky.png"
+Click "images/examples/Pinky.png"
+Click "images/examples/Clyde.png"
+Click "images/examples/Pacman.png"
+Click "images/examples/1355258769815.png"
+End

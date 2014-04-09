@@ -1,0 +1,5 @@
+<testsuite tests="1">
+
+<testcase classname="JAuto" name="scripts/examples/CalculatorDemo.txt"/>
+
+</testsuite>
