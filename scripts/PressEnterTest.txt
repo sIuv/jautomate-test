@@ -1,2 +1,0 @@
-Wait "{seconds}000"
-Type [ENTER]
