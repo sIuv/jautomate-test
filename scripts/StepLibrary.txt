@@ -1,0 +1,2 @@
+Click "{ImageFolder}/1396448644347.png"
+waitverify "{ImageFolder}/1396448519566.png"
